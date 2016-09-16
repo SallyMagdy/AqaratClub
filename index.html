@@ -14,8 +14,11 @@
 	<meta name="author" content="S.M" />
 
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+		<!-- ***** Favicons ***** -->
+		<link rel="shortcut icon" href="images/favicon/fav16-01.png" />
+		<link rel="apple-touch-icon" href="images/favicon/fav57-01.png" />
+		<link rel="apple-touch-icon" sizes="44x72" href="images/favicon/fav72-01.png" />
+		<link rel="apple-touch-icon" sizes="70x114" href="images/favicon/fav114-01.png" />
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 	
@@ -57,7 +60,7 @@
 					<div class="container">
 						<div class="co-header-topbar-right" style="display: table-row">
 							<div style="display: table-cell;padding-right:30px">
-								<a href="http://aqaratclub.com/please-login-or-register/">Login / Register</a>
+								<a href="pages/logIn.html">Login / Register</a>
 							</div>
 							<div style="display: table-cell;">
 								<ul class="list-inline">
@@ -158,44 +161,33 @@
 									<a href="index.html">Home</a>
 								</li>
 								<li>
-									<a href="portfolio.html" class="co-sub-down">Properties</a>
+									<a href="pages/properties.html" class="co-sub-down">Properties</a>
 									<ul class="co-sub-menu">
-										<li><a href="#" target="_blank">Buy</a></li>
-										<li><a href="#" target="_blank">Rent</a></li>
+										<li><a href="pages/properties.html" target="_blank">Buy</a></li>
+										<li><a href="pages/properties.html" target="_blank">Rent</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="services.html" class="co-sub-down">Landlords</a>
+									<a href="#" class="co-sub-down">Landlords</a>
 									 <ul class="co-sub-menu">
-									 	<li><a href="left-sidebar.html">List of Agencies</a></li>
-									 	<li><a href="right-sidebar.html">List of Agents</a></li>
+									 	<li><a href="pages/agencies.html">List of Agencies</a></li>
+									 	<li><a href="pages/agents.html">List of Agents</a></li>
 										 </ul>
 								</li>
-										<!--<li>
-											<a href="#" class="co-sub-ddown">Free HTML5</a>
-											<ul class="co-sub-menu">
-												<li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-												<li><a href="http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-												<li><a href="http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-												<li><a href="http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-												<li><a href="http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-												<li><a href="http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
-											</ul>
-										</li>-->
 								<li>
-									<a href="services.html" class="co-sub-down">Services</a>
+									<a href="#" class="co-sub-down">Services</a>
 									<ul class="co-sub-menu">
-										<li><a href="left-sidebar.html">My Properties</a></li>
-										<li><a href="right-sidebar.html">Favorite Properties</a></li>
-										<li><a href="#">Payment</a></li>
-										<li><a href="#">Profile</a></li>
+										<li><a href="pages/properties.html">My Properties</a></li>
+										<li><a href="pages/properties.html">Favorite Properties</a></li>
+										<li><a href="pages/properties.html">Payment</a></li>
+										<li><a href="pages/properties.html">Profile</a></li>
 									</ul>
-									<li><a href="blog.html" class="co-sub-down">Blog</a>
+									<li><a href="pages/blog.html" class="co-sub-down">Blog</a>
 								<ul class="co-sub-menu">
-									<li><a href="left-sidebar.html">Market Trends</a></li>
+									<li><a href="pages/blog-one.html">Market Trends</a></li>
 								</ul></li>
 
-								<li><a href="about.html">About</a></li>
+								<li><a href="pages/about.html">About</a></li>
 
 							</ul>
 						</nav>
@@ -216,19 +208,19 @@
 									No properties found.    </div>
 
 								<div data-ng-show="properties.length" class="ng-hide">
-									<a data-ng-href="http://aqaratclub.com/compare-properties/?ids=" class="btn" href="http://aqaratclub.com/compare-properties/?ids=">Compare</a>
+									<a class="btn" title="Compare">Compare</a>
 								</div>
 							</div><!-- /#compare-controller -->
 
 						</div><div id="favorites_widget-2" class="widget widget_favorites_widget">
-						<h2 class="widgettitle">    Favorites    </h2>
+						<h2 class="widgettitle" title="Favorite">    Favorites    </h2>
 
 						<div id="favorites-controller" data-ng-controller="FavoritesController" class="ng-scope">
 							<!-- ngRepeat: property in properties --><!-- /.property-micro -->
 
-							Please<a href="http://aqaratclub.com/please-login-or-register/">log in</a>.
+							Please<a href="pages/logIn.html">log in</a>.
 							<div data-ng-show="properties.length" class="ng-hide">
-								<a href="http://aqaratclub.com/favorites/" class="btn">Vew favorites</a>
+								<a href="pages/properties.html" class="btn">View favorites</a>
 							</div>
 						</div><!-- /#compare-controller -->
 
@@ -242,17 +234,22 @@
 
 									<div class="col-sm-12">
 										<div class="property-only-image">
-											<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">
-												<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/11-5.jpg" class="attachment-thumb size-thumb wp-post-image" alt="11">		</a>
-										</div><!-- /.property-only-image -->						</div><!-- /.col-sm-4 -->
+											<a href="pages/property-one.html">
+												<img width="150" height="80" src="images/property/11-5.jpg"
+													 class="attachment-thumb size-thumb wp-post-image" alt="11">
+											</a>
+										</div><!-- /.property-only-image -->
+									</div><!-- /.col-sm-4 -->
 
 
 
 
 									<div class="col-sm-12">
 										<div class="property-only-image">
-											<a href="http://aqaratclub.com/properties/3-bedroom-apartments-qar-16000-18500/">
-												<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/7-11.jpg" class="attachment-thumb size-thumb wp-post-image" alt="7">		</a>
+											<a href="pages/property-one.html">
+												<img width="150" height="80" src="images/property/7-11.jpg"
+													 class="attachment-thumb size-thumb wp-post-image" alt="7">
+											</a>
 										</div><!-- /.property-only-image -->						</div><!-- /.col-sm-4 -->
 
 								</div><div class="row">
@@ -261,8 +258,9 @@
 
 								<div class="col-sm-12">
 									<div class="property-only-image">
-										<a href="http://aqaratclub.com/properties/2-bedroom-apartments-qar-11500-qar-15000/">
-											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/11-7.jpg" class="attachment-thumb size-thumb wp-post-image" alt="11">		</a>
+										<a href="pages/property-one.html">
+											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/11-7.jpg"
+												 class="attachment-thumb size-thumb wp-post-image" alt="11">		</a>
 									</div><!-- /.property-only-image -->						</div><!-- /.col-sm-4 -->
 
 
@@ -270,8 +268,9 @@
 
 								<div class="col-sm-12">
 									<div class="property-only-image">
-										<a href="http://aqaratclub.com/properties/1-bedroom-apartment-qar-11000-qar-12000/">
-											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/9-10.jpg" class="attachment-thumb size-thumb wp-post-image" alt="9">		</a>
+										<a href="pages/property-one.html">
+											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/9-10.jpg"
+												 class="attachment-thumb size-thumb wp-post-image" alt="9">		</a>
 									</div><!-- /.property-only-image -->						</div><!-- /.col-sm-4 -->
 
 							</div><div class="row">
@@ -280,8 +279,9 @@
 
 								<div class="col-sm-12">
 									<div class="property-only-image">
-										<a href="http://aqaratclub.com/properties/available-3-bedroom-semi-furnished-16000-qrmo/">
-											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/8-9.jpg" class="attachment-thumb size-thumb wp-post-image" alt="8">		</a>
+										<a href="pages/property-one.html">
+											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/8-9.jpg"
+												 class="attachment-thumb size-thumb wp-post-image" alt="8">		</a>
 									</div><!-- /.property-only-image -->						</div><!-- /.col-sm-4 -->
 
 
@@ -289,8 +289,9 @@
 
 								<div class="col-sm-12">
 									<div class="property-only-image">
-										<a href="http://aqaratclub.com/properties/modern-offices-available-rent13-sq-m/">
-											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/6-17.jpg" class="attachment-thumb size-thumb wp-post-image" alt="6">		</a>
+										<a href="pages/property-one.html">
+											<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/6-17.jpg"
+												 class="attachment-thumb size-thumb wp-post-image" alt="6">		</a>
 									</div><!-- /.property-only-image -->
 								</div><!-- /.col-sm-4 -->
 
@@ -299,15 +300,27 @@
 							</div><!-- /.row -->
 							</div>
 
-						</div><div id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widgettitle">Navigation</h2>
-						<div class="menu-quick-links-container"><ul id="menu-quick-links-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-605"><a href="/">Homepage</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="http://aqaratclub.com/my-properties/">My Properties</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1813"><a href="http://aqaratclub.com/recent/">Recent properties</a></li>
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-408"><a href="/agents/">Our Agents</a></li>
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-409"><a href="/agencies/">Agencies</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1811"><a href="http://aqaratclub.com/blog/">Blog</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1812"><a href="http://aqaratclub.com/contact/">Contact us</a></li>
-						</ul></div></div>
+						</div>
+					<div id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widgettitle">Navigation</h2>
+						<div class="menu-quick-links-container">
+							<ul id="menu-quick-links-1" class="menu">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item">
+									<a href="/">Homepage</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="pages/properties.html">My Properties</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="pages/properties.html">Recent properties</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom">
+									<a href="pages/agents.html">Our Agents</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom">
+									<a href="pages/agencies.html">Agencies</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="pages/blog.html">Blog</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="pages/contact.html">Contact us</a></li>
+						</ul>
+						</div>
+				</div>
 					</div>
 				</header>
 			
@@ -316,7 +329,8 @@
 
 
 			<div class="map-wrapper">
-				<div class="map" id="map" data-transparent-marker-image="http://aqaratclub.com/wp-content/themes/realsite/assets/img/transparent-marker-image.png" data-latitude="25.282382" data-longitude="51.535130" data-zoom="8" data-styles="" style="position: relative; overflow: hidden; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0); will-change: transform;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 509px; top: 146px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 765px; top: 146px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 765px; top: -110px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 509px; top: -110px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 509px; top: 402px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 765px; top: 402px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 253px; top: 146px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1021px; top: 146px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 253px; top: 402px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1021px; top: -110px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1021px; top: 402px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 253px; top: -110px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1277px; top: 146px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -3px; top: 146px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -3px; top: 402px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1277px; top: -110px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -3px; top: -110px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1277px; top: 402px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 509px; top: 146px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 765px; top: 146px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 765px; top: -110px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 509px; top: -110px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 509px; top: 402px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 765px; top: 402px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 253px; top: 146px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1021px; top: 146px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 253px; top: 402px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1021px; top: -110px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1021px; top: 402px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 253px; top: -110px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1277px; top: 146px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -3px; top: 146px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -3px; top: 402px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1277px; top: -110px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -3px; top: -110px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1277px; top: 402px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 509px; top: 146px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i164!3i109!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=20135" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 765px; top: 146px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i165!3i109!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=68924" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 765px; top: -110px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i165!3i108!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=32903" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 509px; top: -110px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i164!3i108!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=115185" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 509px; top: 402px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i164!3i110!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=110743" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 765px; top: 402px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i165!3i110!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=28461" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 253px; top: 146px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i163!3i109!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=102417" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1021px; top: 146px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i166!3i109!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=117713" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 253px; top: 402px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i163!3i110!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=61954" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1021px; top: -110px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i166!3i108!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=81692" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1021px; top: 402px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i166!3i110!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=77250" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 253px; top: -110px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i163!3i108!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=66396" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1277px; top: 146px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i167!3i109!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=35431" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -3px; top: 146px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i162!3i109!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=53628" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -3px; top: 402px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i162!3i110!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=13165" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1277px; top: -110px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i167!3i108!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=130481" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -3px; top: -110px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i162!3i108!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=17607" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1277px; top: 402px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i167!3i110!4i256!2m3!1e0!2sm!3i365034129!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=126039" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;"><p class="gm-style-pbt">Use two fingers to move the map</p></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="cluster" title="" style="height: 40px; line-height: 40px; width: 40px; text-align: center; cursor: pointer; top: 213.334px; left: 658.59px; color: black; position: absolute; font-size: 11px; font-family: Arial, sans-serif; font-weight: bold; font-style: normal; text-decoration: none; background-image: url(&quot;http://aqaratclub.com/wp-content/themes/realsite/assets/img/transparent-marker-image.png&quot;); background-position: 0px 0px;">18</div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"><div style="position: absolute; visibility: visible; left: 657.59px; top: 212.334px; width: 40px;"><div class="clusterer"><div class="clusterer-inner">18</div></div></div></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=25.282382,51.53513&amp;z=8&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 525px; top: 160px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2016 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 71px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2016 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2016 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@25.282382,51.53513,8z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="55" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 81px; left: 0px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="28" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 42px; right: 28px;"><div class="gm-svpc" controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div></div>
+				<div class="map" id="map">
+				</div>
 
 
 
@@ -329,7 +343,7 @@
 
 									<div id="vertical_filter_widget-4" class="widget widget_vertical_filter_widget">
 
-										<form method="get" action="http://aqaratclub.com/properties/" class="ng-pristine ng-valid">
+										<form method="get" action="pages/properties.html" class="ng-pristine ng-valid">
 
 
 											<!-- LOCATION -->
@@ -450,8 +464,8 @@
 									<div class="col-sm-6 col-md-4">
 										<div class="property-box-simple">
 											<div class="property-box-image ">
-												<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-box-simple-image-inner">
-													<img width="792" height="420" src="images/7-11.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11" sizes="(max-width: 792px) 100vw, 792px">
+												<a href="pages/property-one.html" class="property-box-simple-image-inner">
+													<img width="792" height="420" src="images/property/7-11.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11" sizes="(max-width: 792px) 100vw, 792px">
 
 
 
@@ -482,13 +496,13 @@
 											</div><!-- /.property-box-image -->
 
 											<div class="property-box-simple-header">
-												<h2><a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a></h2>
+												<h2><a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a></h2>
 
 												<h3>from 35,000 QR to 38000</h3>
 
 
 												<div class="property-box-simple-header-thumbnail">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/">
+													<a href="pages/agent-one.html">
 														<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">                    </a>
 												</div><!-- /.property-box-simple-header-thumbnail -->
 											</div><!-- /.property-box-simple-header -->
@@ -507,7 +521,7 @@
 									<div class="col-sm-6 col-md-4">
 										<div class="property-box-simple">
 											<div class="property-box-image ">
-												<a href="http://aqaratclub.com/properties/3-bedroom-apartments-qar-16000-18500/" class="property-box-simple-image-inner">
+												<a href="pages/property-one.html" class="property-box-simple-image-inner">
 													<img width="792" height="420" src="http://aqaratclub.com/wp-content/uploads/2016/08/7-11.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="7" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/7-11-300x159.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/7-11.jpg 792w" sizes="(max-width: 792px) 100vw, 792px">
 
 
@@ -539,13 +553,13 @@
 											</div><!-- /.property-box-image -->
 
 											<div class="property-box-simple-header">
-												<h2><a href="http://aqaratclub.com/properties/3-bedroom-apartments-qar-16000-18500/">3-bedroom apartments</a></h2>
+												<h2><a href="pages/property-one.html">3-bedroom apartments</a></h2>
 
 												<h3>from 16,000 QR to 18500</h3>
 
 
 												<div class="property-box-simple-header-thumbnail">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/">
+													<a href="pages/agent-one.html">
 														<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">                    </a>
 												</div><!-- /.property-box-simple-header-thumbnail -->
 											</div><!-- /.property-box-simple-header -->
@@ -564,7 +578,7 @@
 									<div class="col-sm-6 col-md-4">
 										<div class="property-box-simple">
 											<div class="property-box-image ">
-												<a href="http://aqaratclub.com/properties/2-bedroom-apartments-qar-11500-qar-15000/" class="property-box-simple-image-inner">
+												<a href="pages/property-one.html" class="property-box-simple-image-inner">
 													<img width="792" height="420" src="http://aqaratclub.com/wp-content/uploads/2016/08/11-7.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/11-7-300x159.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/11-7.jpg 792w" sizes="(max-width: 792px) 100vw, 792px">
 
 
@@ -596,13 +610,13 @@
 											</div><!-- /.property-box-image -->
 
 											<div class="property-box-simple-header">
-												<h2><a href="http://aqaratclub.com/properties/2-bedroom-apartments-qar-11500-qar-15000/">2-bedroom apartments</a></h2>
+												<h2><a href="pages/property-one.html">2-bedroom apartments</a></h2>
 
 												<h3>from 11,500 QR to 15000</h3>
 
 
 												<div class="property-box-simple-header-thumbnail">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/">
+													<a href="pages/agent-one.html">
 														<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">                    </a>
 												</div><!-- /.property-box-simple-header-thumbnail -->
 											</div><!-- /.property-box-simple-header -->
@@ -621,7 +635,7 @@
 									<div class="col-sm-6 col-md-4">
 										<div class="property-box-simple">
 											<div class="property-box-image ">
-												<a href="http://aqaratclub.com/properties/1-bedroom-apartment-qar-11000-qar-12000/" class="property-box-simple-image-inner">
+												<a href="pages/property-one.html" class="property-box-simple-image-inner">
 													<img width="792" height="420" src="http://aqaratclub.com/wp-content/uploads/2016/08/9-10.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="9" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/9-10-300x159.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/9-10.jpg 792w" sizes="(max-width: 792px) 100vw, 792px">
 
 
@@ -653,13 +667,13 @@
 											</div><!-- /.property-box-image -->
 
 											<div class="property-box-simple-header">
-												<h2><a href="http://aqaratclub.com/properties/1-bedroom-apartment-qar-11000-qar-12000/">1-bedroom apartment</a></h2>
+												<h2><a href="pages/property-one.html">1-bedroom apartment</a></h2>
 
 												<h3>from 11,000 QR to 12000</h3>
 
 
 												<div class="property-box-simple-header-thumbnail">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/">
+													<a href="pages/agent-one.html">
 														<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">                    </a>
 												</div><!-- /.property-box-simple-header-thumbnail -->
 											</div><!-- /.property-box-simple-header -->
@@ -678,7 +692,7 @@
 									<div class="col-sm-6 col-md-4">
 										<div class="property-box-simple">
 											<div class="property-box-image ">
-												<a href="http://aqaratclub.com/properties/available-3-bedroom-semi-furnished-16000-qrmo/" class="property-box-simple-image-inner">
+												<a href="pages/property-one.html" class="property-box-simple-image-inner">
 													<img width="792" height="420" src="http://aqaratclub.com/wp-content/uploads/2016/08/8-9.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="8" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/8-9-300x159.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/8-9.jpg 792w" sizes="(max-width: 792px) 100vw, 792px">
 
 
@@ -710,13 +724,13 @@
 											</div><!-- /.property-box-image -->
 
 											<div class="property-box-simple-header">
-												<h2><a href="http://aqaratclub.com/properties/available-3-bedroom-semi-furnished-16000-qrmo/">available 3 bedroom Semi-Furnished</a></h2>
+												<h2><a href="pages/property-one.html">available 3 bedroom Semi-Furnished</a></h2>
 
 												<h3>16,000 QR</h3>
 
 
 												<div class="property-box-simple-header-thumbnail">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/">
+													<a href="pages/agent-one.html">
 														<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">                    </a>
 												</div><!-- /.property-box-simple-header-thumbnail -->
 											</div><!-- /.property-box-simple-header -->
@@ -735,7 +749,7 @@
 									<div class="col-sm-6 col-md-4">
 										<div class="property-box-simple">
 											<div class="property-box-image ">
-												<a href="http://aqaratclub.com/properties/modern-offices-available-rent13-sq-m/" class="property-box-simple-image-inner">
+												<a href="pages/property-one.html" class="property-box-simple-image-inner">
 													<img width="792" height="420" src="http://aqaratclub.com/wp-content/uploads/2016/08/6-17.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="6" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/6-17-300x159.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/6-17.jpg 792w" sizes="(max-width: 792px) 100vw, 792px">
 
 
@@ -767,13 +781,13 @@
 											</div><!-- /.property-box-image -->
 
 											<div class="property-box-simple-header">
-												<h2><a href="http://aqaratclub.com/properties/modern-offices-available-rent13-sq-m/">Modern Offices Available For Rent(13 Sq. m)</a></h2>
+												<h2><a href="pages/property-one.html">Modern Offices Available For Rent(13 Sq. m)</a></h2>
 
 												<h3>14,100 QR</h3>
 
 
 												<div class="property-box-simple-header-thumbnail">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/">
+													<a href="pages/agent-one.html">
 														<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">                    </a>
 												</div><!-- /.property-box-simple-header-thumbnail -->
 											</div><!-- /.property-box-simple-header -->
@@ -801,18 +815,18 @@
 							<div class="agent-small">
 								<div class="agent-small-inner">
 									<div class="agent-small-image">
-										<a href="http://aqaratclub.com/agents/khaled-el-sisy/" class="agent-small-image-inner">
-											<img width="400" height="400" src="images/3dd8be2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="3dd8be2" sizes="(max-width: 400px) 100vw, 400px">
+										<a href="pages/agency-one.html" class="agent-small-image-inner">
+											<img width="400" height="400" src="images/team/3dd8be2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="3dd8be2" sizes="(max-width: 400px) 100vw, 400px">
 										</a><!-- /.agent-small-image-inner -->
 									</div><!-- /.agent-small-image -->
 
 									<div class="agent-small-content">
 										<h3 class="agent-small-title">
-											<a href="http://aqaratclub.com/agents/khaled-el-sisy/">Khaled El-Sisy</a>
+											<a href="pages/agent-one.html">Khaled El-Sisy</a>
 										</h3>
 
 										<div class="agent-small-email">
-											<i class="fa fa-at"></i> <a href="http://aqaratclub.com/agents/khaled-el-sisy/">k.elsisy@drupia.com</a>
+											<i class="fa fa-at"></i> <a href="pages/agent-one.html">k.elsisy@drupia.com</a>
 										</div><!-- /.agent-small-email -->
 
 									</div><!-- /.agent-small-content -->
@@ -821,18 +835,18 @@
 							<div class="agent-small">
 								<div class="agent-small-inner">
 									<div class="agent-small-image">
-										<a href="http://aqaratclub.com/agents/anthony-awkar/" class="agent-small-image-inner">
+										<a href="pages/agent-one.html" class="agent-small-image-inner">
 
 											<img width="400" height="400" src="http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="3dd8be2" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">                            </a><!-- /.agent-small-image-inner -->
 									</div><!-- /.agent-small-image -->
 
 									<div class="agent-small-content">
 										<h3 class="agent-small-title">
-											<a href="http://aqaratclub.com/agents/anthony-awkar/">Anthony Awkar</a>
+											<a href="pages/agent-one.html">Anthony Awkar</a>
 										</h3>
 
 										<div class="agent-small-email">
-											<i class="fa fa-at"></i> <a href="http://aqaratclub.com/agents/anthony-awkar/">callcenter@capstone.qa</a>
+											<i class="fa fa-at"></i> <a href="pages/agent-one.html">callcenter@capstone.qa</a>
 										</div><!-- /.agent-small-email -->
 
 										<div class="agent-small-phone">
@@ -843,18 +857,18 @@
 							<div class="agent-small">
 								<div class="agent-small-inner">
 									<div class="agent-small-image">
-										<a href="http://aqaratclub.com/agents/sabrina-gomez/" class="agent-small-image-inner">
+										<a href="pages/agent-one.html" class="agent-small-image-inner">
 
 											<img width="393" height="393" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 393px) 100vw, 393px">                            </a><!-- /.agent-small-image-inner -->
 									</div><!-- /.agent-small-image -->
 
 									<div class="agent-small-content">
 										<h3 class="agent-small-title">
-											<a href="http://aqaratclub.com/agents/sabrina-gomez/">Sabrina GOMEZ</a>
+											<a href="pages/agent-one.html">Sabrina GOMEZ</a>
 										</h3>
 
 										<div class="agent-small-email">
-											<i class="fa fa-at"></i> <a href="http://aqaratclub.com/agents/sabrina-gomez/">info@mdproperties.com.qa</a>
+											<i class="fa fa-at"></i> <a href="pages/agent-one.html">info@mdproperties.com.qa</a>
 										</div><!-- /.agent-small-email -->
 
 										<div class="agent-small-phone">
@@ -872,13 +886,13 @@
 
 								<div class="property-small">
 									<div class="property-small-image ">
-										<a href="http://aqaratclub.com/properties/saray-musheireb-hotel-apartments-3/">
+										<a href="pages/property-one.html">
 											<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/944974_1527968320832461_5561438129335039983_n-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="944974_1527968320832461_5561438129335039983_n">            </a>
 									</div><!-- /.property-small-image -->
 
 									<div class="property-small-content">
 										<h3 class="property-small-title">
-											<a href="http://aqaratclub.com/properties/saray-musheireb-hotel-apartments-3/">Saray Musheireb Hotel Apartments</a>
+											<a href="pages/property-one.html">Saray Musheireb Hotel Apartments</a>
 										</h3><!-- /.property-small-title -->
 
 										<div class="property-small-type">
@@ -890,13 +904,13 @@
 								</div><!-- /.property-small -->
 								<div class="property-small">
 									<div class="property-small-image ">
-										<a href="http://aqaratclub.com/properties/saray-musheireb-hotel-apartments-2/">
+										<a href="pages/property-one.html">
 											<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/10399679_1527968237499136_684011444613279845_n-e1471968103706-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="10399679_1527968237499136_684011444613279845_n">            </a>
 									</div><!-- /.property-small-image -->
 
 									<div class="property-small-content">
 										<h3 class="property-small-title">
-											<a href="http://aqaratclub.com/properties/saray-musheireb-hotel-apartments-2/">Saray Musheireb Hotel Apartments</a>
+											<a href="pages/property-one.html">Saray Musheireb Hotel Apartments</a>
 										</h3><!-- /.property-small-title -->
 
 										<div class="property-small-type">
@@ -916,13 +930,13 @@
 
 						<div class="col-sm-6 col-md-4">
 							<div class="agent-medium">
-								<a class="agent-medium-image" href="http://aqaratclub.com/agents/khaled-el-sisy/">
-									<img width="150" height="150" src="images/3dd8be2.jpg" class="attachment-thumb size-thumb wp-post-image" alt="3dd8be2" sizes="(max-width: 150px) 100vw, 150px">
+									<a class="agent-medium-image" href="pages/agent-one.html">
+									<img width="150" height="150" src="images/team/3dd8be2.jpg" class="attachment-thumb size-thumb wp-post-image" alt="3dd8be2" sizes="(max-width: 150px) 100vw, 150px">
 								</a><!-- /.agent-medium-image -->
 
 								<div class="agent-medium-content">
 									<h2 class="agent-medium-title">
-										<a href="http://aqaratclub.com/agents/khaled-el-sisy/">Khaled El-Sisy</a>
+										<a href="pages/agent-one.html">Khaled El-Sisy</a>
 									</h2>
 
 
@@ -943,12 +957,12 @@
 
 						<div class="col-sm-6 col-md-4">
 							<div class="agent-medium">
-								<a class="agent-medium-image" href="http://aqaratclub.com/agents/anthony-awkar/">
+								<a class="agent-medium-image" href="pages/agent-one.html">
 									<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2.jpg" class="attachment-thumb size-thumb wp-post-image" alt="3dd8be2" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2.jpg 400w" sizes="(max-width: 150px) 100vw, 150px">            </a><!-- /.agent-medium-image -->
 
 								<div class="agent-medium-content">
 									<h2 class="agent-medium-title">
-										<a href="http://aqaratclub.com/agents/anthony-awkar/">Anthony Awkar</a>
+										<a href="pages/agent-one.html">Anthony Awkar</a>
 									</h2>
 
 
@@ -971,12 +985,12 @@
 
 						<div class="col-sm-6 col-md-4">
 							<div class="agent-medium">
-								<a class="agent-medium-image" href="http://aqaratclub.com/agents/sabrina-gomez/">
+								<a class="agent-medium-image" href="pages/agent-one.html">
 									<img width="150" height="150" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg" class="attachment-thumb size-thumb wp-post-image" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 150px) 100vw, 150px">            </a><!-- /.agent-medium-image -->
 
 								<div class="agent-medium-content">
 									<h2 class="agent-medium-title">
-										<a href="http://aqaratclub.com/agents/sabrina-gomez/">Sabrina GOMEZ</a>
+										<a href="pages/agent-one.html">Sabrina GOMEZ</a>
 									</h2>
 
 
@@ -1009,15 +1023,15 @@
 				<div>
 					<div class="property-carousel-item">
 						<div class="property-simple">
-							<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-simple-image ">
-								<img width="792" height="420" src="images/9-10.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
+							<a href="pages/property-one.html" class="property-simple-image ">
+								<img width="792" height="420" src="images/property/9-10.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
 
 
 							</a>
 
 							<div class="property-simple-content">
 								<h2 class="property-simple-title">
-									<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a>
+									<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a>
 								</h2>
 
 								<div class="property-simple-location">
@@ -1032,15 +1046,15 @@
 				<div>
 					<div class="property-carousel-item">
 						<div class="property-simple">
-							<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-simple-image ">
-								<img width="792" height="420" src="images/7-11.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
+							<a href="pages/property-one.html" class="property-simple-image ">
+								<img width="792" height="420" src="images/property/7-11.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
 
 
 							</a>
 
 							<div class="property-simple-content">
 								<h2 class="property-simple-title">
-									<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a>
+									<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a>
 								</h2>
 
 								<div class="property-simple-location">
@@ -1055,15 +1069,15 @@
 				<div>
 					<div class="property-carousel-item">
 						<div class="property-simple">
-							<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-simple-image ">
-								<img width="792" height="420" src="images/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
+							<a href="pages/property-one.html" class="property-simple-image ">
+								<img width="792" height="420" src="images/property/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
 
 
 							</a>
 
 							<div class="property-simple-content">
 								<h2 class="property-simple-title">
-									<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a>
+									<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a>
 								</h2>
 
 								<div class="property-simple-location">
@@ -1078,15 +1092,15 @@
 				<div>
 					<div class="property-carousel-item">
 						<div class="property-simple">
-							<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-simple-image ">
-								<img width="792" height="420" src="images/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
+							<a href="pages/property-one.html" class="property-simple-image ">
+								<img width="792" height="420" src="images/property/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
 
 
 							</a>
 
 							<div class="property-simple-content">
 								<h2 class="property-simple-title">
-									<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a>
+									<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a>
 								</h2>
 
 								<div class="property-simple-location">
@@ -1101,15 +1115,15 @@
 				<div>
 					<div class="property-carousel-item">
 						<div class="property-simple">
-							<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-simple-image ">
-								<img width="792" height="420" src="images/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
+							<a href="pages/property-one.html" class="property-simple-image ">
+								<img width="792" height="420" src="images/property/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
 
 
 							</a>
 
 							<div class="property-simple-content">
 								<h2 class="property-simple-title">
-									<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a>
+									<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a>
 								</h2>
 
 								<div class="property-simple-location">
@@ -1124,15 +1138,15 @@
 				<div>
 					<div class="property-carousel-item">
 						<div class="property-simple">
-							<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/" class="property-simple-image ">
-								<img width="792" height="420" src="images/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
+							<a href="pages/property-one.html" class="property-simple-image ">
+								<img width="792" height="420" src="images/property/11-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="11"  sizes="(max-width: 792px) 100vw, 792px">
 
 
 							</a>
 
 							<div class="property-simple-content">
 								<h2 class="property-simple-title">
-									<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room</a>
+									<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room</a>
 								</h2>
 
 								<div class="property-simple-location">
@@ -1146,26 +1160,6 @@
 				</div>
 </div>
 			</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<div class="block fullwidth background-grey background-map mb0">
 
 				<div class="partners row">
@@ -1228,13 +1222,13 @@
 
 											<div class="property-small">
 												<div class="property-small-image ">
-													<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">
+													<a href="pages/property-one.html">
 														<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/11-5-150x80.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="11">            </a>
 												</div><!-- /.property-small-image -->
 
 												<div class="property-small-content">
 													<h3 class="property-small-title">
-														<a href="http://aqaratclub.com/properties/4-bedroom-duplex-apartments-maids-room-qar-35000-qar-38000/">4-bedroom duplex apartments + maid’s room </a><br>
+														<a href="pages/property-one.html">4-bedroom duplex apartments + maid’s room </a><br>
 													</h3><!-- /.property-small-title -->
 
 													<div class="property-small-type">
@@ -1248,13 +1242,13 @@
 											</div><!-- /.property-small -->
 											<div class="property-small">
 												<div class="property-small-image ">
-													<a href="http://aqaratclub.com/properties/3-bedroom-apartments-qar-16000-18500/">
+													<a href="pages/property-one.html">
 														<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/7-11-150x80.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="7">            </a>
 												</div><!-- /.property-small-image -->
 
 												<div class="property-small-content">
 													<h3 class="property-small-title">
-														<a href="http://aqaratclub.com/properties/3-bedroom-apartments-qar-16000-18500/">3-bedroom apartments</a><br>
+														<a href="pages/property-one.html">3-bedroom apartments</a><br>
 													</h3><!-- /.property-small-title -->
 
 													<div class="property-small-type">
@@ -1268,14 +1262,14 @@
 											</div><!-- /.property-small -->
 											<div class="property-small">
 												<div class="property-small-image ">
-													<a href="http://aqaratclub.com/properties/2-bedroom-apartments-qar-11500-qar-15000/">
+													<a href="pages/property-one.html">
 														<img width="150" height="80" src="http://aqaratclub.com/wp-content/uploads/2016/08/11-7-150x80.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="11">
 													</a>
 												</div><!-- /.property-small-image -->
 
 												<div class="property-small-content">
 													<h3 class="property-small-title">
-														<a href="http://aqaratclub.com/properties/2-bedroom-apartments-qar-11500-qar-15000/">2-bedroom apartments</a><br>
+														<a href="pages/property-one.html">2-bedroom apartments</a><br>
 													</h3><!-- /.property-small-title -->
 
 													<div class="property-small-type">
@@ -1296,10 +1290,10 @@
 										<div class="menu-quick-links-container"><ul id="menu-quick-links" class="menu"><li id="menu-item-605" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-605"><a href="/">Homepage</a></li>
 											<li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="http://aqaratclub.com/my-properties/">My Properties</a></li>
 											<li id="menu-item-1813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1813"><a href="http://aqaratclub.com/recent/">Recent properties</a></li>
-											<li id="menu-item-408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-408"><a href="/agents/">Our Agents</a></li>
-											<li id="menu-item-409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-409"><a href="/agencies/">Agencies</a></li>
-											<li id="menu-item-1811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1811"><a href="http://aqaratclub.com/blog/">Blog</a></li>
-											<li id="menu-item-1812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1812"><a href="http://aqaratclub.com/contact/">Contact us</a></li>
+											<li id="menu-item-408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-408"><a href="pages/agents.html">Our Agents</a></li>
+											<li id="menu-item-409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-409"><a href="pages/agencies.html">Agencies</a></li>
+											<li id="menu-item-1811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1811"><a href="pages/blog.html">Blog</a></li>
+											<li id="menu-item-1812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1812"><a href="pages/about.html">Contact us</a></li>
 										</ul></div></div>                            </div>
 
 								<hr class="visible-sm">
@@ -1312,18 +1306,18 @@
 										<div class="agent-small">
 											<div class="agent-small-inner">
 												<div class="agent-small-image">
-													<a href="http://aqaratclub.com/agents/khaled-el-sisy/" class="agent-small-image-inner">
-														<img width="150" height="150" src="images/3dd8be2.jpg" class="attachment-thumb size-thumb wp-post-image" alt="3dd8be2" sizes="(max-width: 150px) 100vw, 150px">
+													<a href="pages/agency-one.html" class="agent-small-image-inner">
+														<img width="150" height="150" src="images/team/3dd8be2.jpg" class="attachment-thumb size-thumb wp-post-image" alt="3dd8be2" sizes="(max-width: 150px) 100vw, 150px">
 													</a><!-- /.agent-small-image-inner -->
 												</div><!-- /.agent-small-image -->
 
 												<div class="agent-small-content">
 													<h3 class="agent-small-title">
-														<a href="http://aqaratclub.com/agents/khaled-el-sisy/">Khaled El-Sisy</a>
+														<a href="pages/agent-one.html">Khaled El-Sisy</a>
 													</h3>
 
 													<div class="agent-small-email">
-														<i class="fa fa-at"></i> <a href="http://aqaratclub.com/agents/khaled-el-sisy/">k.elsisy@drupia.com</a>
+														<i class="fa fa-at"></i> <a href="pages/agent-one.html">k.elsisy@drupia.com</a>
 													</div><!-- /.agent-small-email -->
 
 												</div><!-- /.agent-small-content -->
@@ -1332,18 +1326,18 @@
 										<div class="agent-small">
 											<div class="agent-small-inner">
 												<div class="agent-small-image">
-													<a href="http://aqaratclub.com/agents/anthony-awkar/" class="agent-small-image-inner">
+													<a href="pages/agent-one.html" class="agent-small-image-inner">
 
 														<img width="400" height="400" src="http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="3dd8be2" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/3dd8be2.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">                            </a><!-- /.agent-small-image-inner -->
 												</div><!-- /.agent-small-image -->
 
 												<div class="agent-small-content">
 													<h3 class="agent-small-title">
-														<a href="http://aqaratclub.com/agents/anthony-awkar/">Anthony Awkar</a>
+														<a href="pages/agent-one.html">Anthony Awkar</a>
 													</h3>
 
 													<div class="agent-small-email">
-														<i class="fa fa-at"></i> <a href="http://aqaratclub.com/agents/anthony-awkar/">callcenter@capstone.qa</a>
+														<i class="fa fa-at"></i> <a href="pages/agent-one.html">callcenter@capstone.qa</a>
 													</div><!-- /.agent-small-email -->
 
 													<div class="agent-small-phone">
@@ -1354,18 +1348,18 @@
 										<div class="agent-small">
 											<div class="agent-small-inner">
 												<div class="agent-small-image">
-													<a href="http://aqaratclub.com/agents/sabrina-gomez/" class="agent-small-image-inner">
+													<a href="pages/agent-one.html" class="agent-small-image-inner">
 
 														<img width="393" height="393" src="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA" srcset="http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-150x150.jpg 150w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA-300x300.jpg 300w, http://aqaratclub.com/wp-content/uploads/2016/08/AAEAAQAAAAAAAAb-AAAAJDM3ZTgyMWU4LTNkZDctNGJmYi1hZmI4LTViODkxZmQ1Y2RjNA.jpg 393w" sizes="(max-width: 393px) 100vw, 393px">                            </a><!-- /.agent-small-image-inner -->
 												</div><!-- /.agent-small-image -->
 
 												<div class="agent-small-content">
 													<h3 class="agent-small-title">
-														<a href="http://aqaratclub.com/agents/sabrina-gomez/">Sabrina GOMEZ</a>
+														<a href="pages/agent-one.html">Sabrina GOMEZ</a>
 													</h3>
 
 													<div class="agent-small-email">
-														<i class="fa fa-at"></i> <a href="http://aqaratclub.com/agents/sabrina-gomez/">info@mdproperties.com.qa</a>
+														<i class="fa fa-at"></i> <a href="pages/agent-one.html">info@mdproperties.com.qa</a>
 													</div><!-- /.agent-small-email -->
 
 													<div class="agent-small-phone">
@@ -1446,6 +1440,10 @@
 		<script src="js/scrollTo.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.raty.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBidlphHh4azhAubpEiMog0JXStzAkMgYY"></script>
+		<script type="text/javascript" src="js/jquery.googlemap.js"></script>
+		<script type="text/javascript" src="js/markerclusterer.js"></script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
@@ -1455,6 +1453,30 @@
 			document.getElementById("mySidenav").style.width = "0";
 		};
 	</script>
+		<script type="text/javascript">
+
+				var center = new google.maps.LatLng(25.282382, 51.535130);
+				var options = {
+					'zoom': 8,
+					'center': center,
+					'mapTypeId': google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map(document.getElementById("map"), options);
+
+	var markers = [];
+	for (var i = 0; i < 100; i++) {
+		var latLng = new google.maps.LatLng(25.282382, 51.535130);
+		var marker = new google.maps.Marker({'position': latLng});
+		markers.push(marker);
+	}
+	var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'images/m'});
+	</script>
+
+
+
+
+
 	</body>
 </html>
 

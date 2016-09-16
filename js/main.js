@@ -6,23 +6,25 @@
 	 * Scroll top
 	 */
 	var scroll_top = $('.scroll-top');
-	if(scroll_top.length != 0) {
-		scroll_top.on('click', function() {
+	if (scroll_top.length != 0) {
+		scroll_top.on('click', function () {
 			$.scrollTo('body', 800);
 		});
 	}
 
 
-	$(document).ready( function(){
-		$('#compare').click( function() {
+	$(document).ready(function () {
+		$('#compare').click(function () {
 			var toggleWidth = $("#mySidenav").width() == 0 ? "235" : "0";
-			$('#mySidenav').animate({ width: toggleWidth });
+			$('#mySidenav').animate({
+				width: toggleWidth
+			});
 		});
 
 
 	});
 
-	$(document).on('ready', function() {
+	$(document).on('ready', function () {
 		$('.regular').slick({
 			arrows: true,
 			infinite: false,
@@ -43,15 +45,24 @@
 					breakpoint: 850,
 					settings: {
 						slidesToShow: 1,
-						slidesToScroll: 1,
+						slidesToScroll: 1
 					}
 				}]
 
 		});
+
+		$('.propGallery').slick(
+			{
+				arrows:false,
+				autoplay:true,
+				speed:4000,
+				draggable:true
+
+			}
+		);
+
+
 	});
-
-
-
 
 	// iPad and iPod detection	
 	var isiPad = function () {
@@ -145,32 +156,7 @@
 	};
 
 
-	/*Carousel*/
-	$(document).ready(function() {
 
-		//Sort random function
-		function random(owlSelector){
-			owlSelector.children().sort(function(){
-				return Math.round(Math.random()) - 0.5;
-			}).each(function(){
-				$(this).appendTo(owlSelector);
-			});
-		}
-
-		$("#owl-demo").owlCarousel({
-			navigation: true,
-			navigationText: [
-				"<i class='fa fa-chevron-left'></i>",
-				"<i class='fa fa-chevron-right'></i>"
-			],
-			beforeInit : function(elem){
-				//Parameter elem pointing to $("#owl-demo")
-				random(elem);
-			}
-
-		});
-
-	});
 
 	// Animations
 
@@ -213,6 +199,48 @@
 
 
 	});
+
+	/* * Google Map*/
+
+
+	var map = $('#fullscreen-map');
+
+	if (map.length) {
+		var url = '';
+		if (window.location.search) {
+			url = window.location.search + '&properties-feed=true';
+		} else {
+			url = '?properties-feed=true';
+		}
+
+		$.ajax({
+			url: url,
+			success: function (markers) {
+				map.google_map({
+					infowindow: {
+						borderBottomSpacing: 0,
+						height: 120,
+						width: 424,
+						offsetX: 48,
+						offsetY: -87
+					},
+					zoom: map.data('zoom'),
+					marker: {
+						height: 56,
+						width: 56
+					},
+					cluster: {
+						height: 40,
+						width: 40,
+						gridSize: map.data('grid-size')
+					},
+					transparentMarkerImage: map.data('transparent-marker-image'),
+					transparentClusterImage: map.data('transparent-marker-image'),
+					markers: markers
+				});
+			}
+		});
+	}
 
 
 
