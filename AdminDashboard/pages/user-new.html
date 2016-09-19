@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>add new post</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="../plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" href="../dist/css/skins/skin-blue.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img src="../dist/img/fav72-01.png"> </span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">
+          <img src="../dist/img/fav72-01.png">
+        <b>AqaratClub</b>
+      </span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-primary">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- /.messages-menu -->
+
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-plus"></i>
+
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-light-blue"></i>Agent
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-light-blue"></i>Agency
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-file-text-o text-light-blue"></i>Post
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-comment text-light-blue"></i>Comment
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Mostafa Kandil
+                  <small>admin</small>
+                </p>
+              </li>
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+         <!-- <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- search form (Optional) -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <!-- Optionally, you can add icons to the links -->
+        <li class="treeview">
+          <a href="#"><i class="fa fa-thumb-tack active"></i> <span>Posts</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#" class="active">All Posts</a></li>
+            <li><a href="#">Add new Post</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Tags</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-users"></i> <span>Agencies</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#">All Agencies</a></li>
+            <li><a href="#">Add new Agency</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-user"></i> <span>Agents</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#">All Agents</a></li>
+            <li><a href="#">Add new Agent</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-file-text-o"></i> <span>Pages</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#">All Pages</a></li>
+            <li><a href="#">Add new Page</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-envelope"></i> <span>Contact</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#">Contact Forms</a></li>
+            <li><a href="#">Add new</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-house"></i> <span>Properties</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#">All Properties</a></li>
+            <li><a href="#">Add new Property</a></li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Types</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-comment"></i> <span>Comments</span>
+
+          </a>
+        </li>
+
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper row">
+    <!-- Content Header (Page header) -->
+    <div class="box-header col-md-9">
+      <h2 class="box-title btitle">Add New Post
+      </h2>
+        <input type="text" id="title" placeholder="enter title here">
+
+
+
+      <div class="box-body pad">
+        <form>
+                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+
+                    </textarea>
+        </form>
+      </div>
+      <button type="button" class="btn btn-info pull-right ">Publish</button>
+    </div>
+
+    <div class="col-md-3">
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <h3 class="box-title">Category</h3>
+
+          <div class="box-tools">
+            <button type="button" class="btn btn-box-tool pull-right" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box-body no-padding">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" data-toggle="tab">All Categories</a></li>
+            <li><a href="#tab_2" data-toggle="tab">Most used</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+
+          <form class="sideForm tab-pane active" id="tab_1">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Construction</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Tips and Tricks</label>
+            </div>
+
+          </form>
+          <form class="sideForm tab-pane" id="tab_2">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Home improvement</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Tips and Tricks</label>
+            </div>
+
+          </form>
+        </div>
+
+        <a href="#"><i class="fa fa-plus">Add a new Category</i></a>
+        <!-- /.box-body -->
+      </div>
+      <!-- /. box -->
+      <div class="box box-solid">
+      <div class="box-header with-border">
+        <h3 class="box-title">Languages</h3>
+
+        <div class="box-tools">
+          <button type="button" class="btn btn-box-tool pull-right" data-widget="collapse"><i class="fa fa-minus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="form-group">
+          <label for="lang">Language of this post</label>
+          <select class="form-control" id="lang">
+            <option>English</option>
+            <option>Arabic</option>
+
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transPost">This post is a translation</label>
+          <select class="form-control" id="transPost">
+            <option>“Eid Al-Adha is coming"</option>
+            <option>“Eid Al-Adha is coming”</option>
+          </select>
+        </div>
+
+      </div>
+      <!-- /.box-body -->
+    </div>
+      <!-- /.box -->
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <h3 class="box-title">Tags</h3>
+
+          <div class="box-tools">
+            <button type="button" class="btn btn-box-tool pull-right" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box-body">
+          <div>
+            <input type="text" id="tags">
+            <button>Add</button>
+          </div>
+          <p class="howto" id="new-tag-post_tag-desc">Separate tags with commas</p>
+          <a id="tagSugs">view suggested tags</a>
+          <div id="sugTags">
+            <p id="post_tag" class="the-tagcloud" >
+              <a href="#" class="tag-link-271" title="2 topics" style="font-size: 8pt;">Al-Asmakh Company</a>
+              <a href="#" class="tag-link-304" title="2 topics" style="font-size: 8pt;">Apartments</a>
+              <a href="#" class="tag-link-384" title="3 topics" style="font-size: 9.8064516129pt;">buildings</a>
+              <a href="#" class="tag-link-300" title="2 topics" style="font-size: 8pt;">carpets</a>
+              <a href="#" class="tag-link-344" title="11 topics" style="font-size: 17.0322580645pt;">construction</a>
+              <a href="#" class="tag-link-324" title="2 topics" style="font-size: 8pt;">construction companies</a>
+              <a href="#" class="tag-link-427" title="7 topics" style="font-size: 14.3225806452pt;">constructions</a>
+              <a href="#" class="tag-link-142" title="3 topics" style="font-size: 9.8064516129pt;">construction sector</a>
+              <a href="#" class="tag-link-162" title="9 topics" style="font-size: 15.8279569892pt;">design</a>
+              <a href="#" class="tag-link-139" title="9 topics" style="font-size: 15.8279569892pt;">Doha</a>
+              <a href="#" class="tag-link-163" title="8 topics" style="font-size: 15.0752688172pt;">décor</a>
+              <a href="#" class="tag-link-165" title="5 topics" style="font-size: 12.5161290323pt;">furniture</a>
+              <a href="#" class="tag-link-305" title="3 topics" style="font-size: 9.8064516129pt;">home organization</a>
+              <a href="#" class="tag-link-272" title="5 topics" style="font-size: 12.5161290323pt;">hospitality sector</a>
+              <a href="#" class="tag-link-575" title="3 topics" style="font-size: 9.8064516129pt;">Hospitality sector in Qatar</a>
+              <a href="#" class="tag-link-273" title="10 topics" style="font-size: 16.4301075269pt;">hotels</a>
+              <a href="#" class="tag-link-11" title="2 topics" style="font-size: 8pt;">house</a>
+              <a href="#" class="tag-link-559" title="2 topics" style="font-size: 8pt;">housing units</a>
+              <a href="#" class="tag-link-214" title="3 topics" style="font-size: 9.8064516129pt;">Infrastructure</a>
+              <a href="#" class="tag-link-291" title="2 topics" style="font-size: 8pt;">investment</a>
+              <a href="#" class="tag-link-534" title="2 topics" style="font-size: 8pt;">land prices</a>
+              <a href="#" class="tag-link-134" title="2 topics" style="font-size: 8pt;">Lusail City</a>
+              <a href="#" class="tag-link-382" title="2 topics" style="font-size: 8pt;">Mall of Qatar</a>
+              <a href="#" class="tag-link-380" title="2 topics" style="font-size: 8pt;">modern architecture</a>
+              <a href="#" class="tag-link-144" title="2 topics" style="font-size: 8pt;">new home</a>
+              <a href="#" class="tag-link-141" title="5 topics" style="font-size: 12.5161290323pt;">new projects</a>
+              <a href="#" class="tag-link-323" title="2 topics" style="font-size: 8pt;">private sector</a>
+              <a href="#" class="tag-link-138" title="25 topics" style="font-size: 22pt;">Qatar</a>
+              <a href="#" class="tag-link-222" title="3 topics" style="font-size: 9.8064516129pt;">Qatari real estate market</a>
+              <a href="#" class="tag-link-136" title="4 topics" style="font-size: 11.311827957pt;">Qatari real estate sector</a>
+              <a href="#" class="tag-link-182" title="21 topics" style="font-size: 20.9462365591pt;">Real estate</a>
+              <a href="#" class="tag-link-145" title="2 topics" style="font-size: 8pt;">Real estate agents</a>
+              <a href="#" class="tag-link-216" title="3 topics" style="font-size: 9.8064516129pt;">Real estate development</a>
+              <a href="#" class="tag-link-220" title="7 topics" style="font-size: 14.3225806452pt;">Real estate sector</a>
+              <a href="#" class="tag-link-584" title="2 topics" style="font-size: 8pt;">real estate sector in Qatar</a>
+              <a href="#" class="tag-link-326" title="2 topics" style="font-size: 8pt;">rents</a>
+              <a href="#" class="tag-link-530" title="2 topics" style="font-size: 8pt;">retail sector</a>
+              <a href="#" class="tag-link-571" title="2 topics" style="font-size: 8pt;">rooms</a>
+              <a href="#" class="tag-link-379" title="2 topics" style="font-size: 8pt;">skyscrapers</a>
+              <a href="#" class="tag-link-306" title="3 topics" style="font-size: 9.8064516129pt;">small spaces</a>
+              <a href="#" class="tag-link-459" title="4 topics" style="font-size: 11.311827957pt;">Tourism</a>
+              <a href="#" class="tag-link-317" title="4 topics" style="font-size: 11.311827957pt;">world cup 2022.</a>
+              <a href="#" class="tag-link-135" title="2 topics" style="font-size: 8pt;">Zaha Hadid</a>
+              <a href="#" class="tag-link-367" title="3 topics" style="font-size: 9.8064516129pt;">قطر</a>
+              <a href="#" class="tag-link-548" title="3 topics" style="font-size: 9.8064516129pt;">وحدات سكنية</a></p>
+          </div>
+
+        </div>
+        <!-- /.box-body -->
+      </div>
+
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <h3 class="box-title">Author</h3>
+
+          <div class="box-tools">
+            <button type="button" class="btn btn-box-tool pull-right" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="form-group">
+            <select class="form-control" id="author">
+              <option>Aqaratclub</option>
+              <option>Mostafa Kandil</option>
+
+            </select>
+          </div>
+
+        </div>
+      </div>
+        <!-- /.box-body -->
+      </div>
+
+    </div>
+</div>
+  </div>
+
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2016 <a href="#">Aqarat Club</a>.</strong> All rights reserved.
+  </footer>
+
+
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.0 -->
+<script src="../plugins/jQuery/jQuery-2.2.0.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+<script>
+  $(function () {
+    //Enable iCheck plugin for checkboxes
+    //iCheck for checkbox and radio inputs
+    $('.table [type="checkbox"]').iCheck({
+      checkboxClass: 'icheckbox_flat-blue',
+      radioClass: 'iradio_flat-blue'
+    });
+
+    //Enable check and uncheck all functionality
+    $(".checkbox-toggle").click(function () {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+        //Uncheck all checkboxes
+        $(".table [type='checkbox']").iCheck("uncheck");
+        $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+      } else {
+        //Check all checkboxes
+        $(".table [type='checkbox']").iCheck("check");
+        $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+      }
+      $(this).data("clicks", !clicks);
+    });
+
+    $('#tagSugs').click(function(){
+      $('#sugTags').toggle();
+    })
+
+  });
+
+
+</script>
+<script>
+  $(function () {
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('editor1');
+  });
+</script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>
