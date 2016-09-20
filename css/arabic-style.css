@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+
+body,p, ul, ol,h1, h2, h3, h4, h5, h6, .header-main-title,ul.nav-tabs a,.mission-box h2, .vision-box h2,.contact-box.agency ul{
+    font-family: 'Droid Arabic Kufi', serif;!important;
+
+}
+
+ul.sf-menu {
+    direction: ltr
+}
+
+.contact th.phone i{
+    transform: rotate(250deg);
+}
+
+.dropdown-menu > li > a{
+    padding: 3px 0;
+}
+
+.co-header-topbar-right,.property-map-widget-area-inner{
+    float: left;
+}
+
+#co-menu-wrap {
+    float:right;
+}
+
+.header-action {
+    left: 64px;
+    right:auto;
+}
+
+.property-box-simple-meta ul li strong {
+    margin-left: 5px;
+    float: right;
+}
+
+.property-box-simple-meta ul li {
+    padding-right: 11px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+.slider {
+    width: 59%;
+}
+
+.property-simple-price {
+    font-size: 13px;
+}
+
+#footer .menu{
+    padding-right:0;
+}
+
+#footer .property-small-type{
+    align:start;
+}
+
+.contact th {
+    padding: 0px 0 8px 0px;
+}
+
+.contact .fa{
+    padding-left: 4px;
+}
+
+.nav-tabs li{
+    width: auto;
+}
+
+
+#mySidenav h2.page-header, h2.widgettitle{
+    font-size: 21px;
+    padding: 25px;
+    padding-bottom: 2px;
+}
+
+#favorites-controller, #favorites-controller a{
+    padding: 25px;
+    padding-bottom: 2px;
+}
+
+.sidenav .closebtn {
+  margin-left:0;
+    left: 0;
+    right:auto;
+}
+
+.property-amenities li.yes:before, .property-amenities li.no:before{
+    padding-left: 17px;
+}
+
+.amen .no,.amen .yes{
+    padding:0;
+}
+
+
+
+
+.property-amenities li.eng-amanity:after {
+    color: #BDBDBD;
+    content: '\f00d';
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    margin: 0px 0px 0px 0px;
+    vertical-align: top;
+    padding-left: 22px;
+
+}
+.property-amenities li.eng-amanity:before {
+content:"";
+    padding:0;
+}
+
+.eng-amanity{
+    margin-right: 0;
+    padding:0;
+}
