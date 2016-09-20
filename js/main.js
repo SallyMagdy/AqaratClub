@@ -15,7 +15,7 @@
 
 	$(document).ready(function () {
 		$('#compare').click(function () {
-			var toggleWidth = $("#mySidenav").width() == 0 ? "235" : "0";
+			var toggleWidth = $("#mySidenav").width() == 0 ? "285" : "0";
 			$('#mySidenav').animate({
 				width: toggleWidth
 			});
